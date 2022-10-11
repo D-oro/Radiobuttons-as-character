@@ -1,38 +1,141 @@
-.App {
-  text-align: center;
+.App{
+  background-image: url("../src/images/brickwall.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: .5%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button{
+  background-image: url("../src/images/castledoors.png");
+  background-color: rgba(255, 0, 0, 0.0);
+  background-repeat:no-repeat;
+  background-position: bottom;
+  border-width: 0px;
+  width: 5%;
+  margin-bottom: 1%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* rope ladder */
+button2{
+  background-image: url("../src/images/rope_ladder.png");
+  background-color: rgba(255, 0, 0, 0.0);
+  background-repeat:no-repeat;
+  background-position: 0% 0%;
+  border-width: 0px;
+  width: 3%; 
+  /* margin-bottom: 8%; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* fourth block */
+.radioRow4{
+  display:flex;
+  justify-content: space-between;
+  height: 25vh;
+}
+
+.radioRow4 input[type="radio"] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+
+.radioRow4 label {
+  /* change width to 25% at the end */
+  width: 20%;
+  /* delete background-colour at the end, just makes it easier to work with */
+  background-color: azure;
+}
+
+.radioRow4 input[type="radio"]:checked + label {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flex-end;
+  background-image: url("../src/images/player1.png");
+  background-repeat:no-repeat;
+  background-position: 0% 100%;
 }
 
-.App-link {
-  color: #61dafb;
+
+/* third block */
+.radioRow3{
+  display:flex;
+  justify-content: space-between;
+  height: 25vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.radioRow3 input[type="radio"] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+
+.radioRow3 label {
+  /* change width to 25% at the end */
+  width: 20%;
+  /* delete background-colour at the end, just makes it easier to work with */
+  background-color: azure;
+}
+
+.radioRow3 input[type="radio"]:checked + label {
+  display: flex;
+  align-items: flex-end;
+  background-image: url("../src/images/player1.png");
+  background-repeat:no-repeat;
+  background-position: 50% 100%;
+}
+
+
+/* second block */
+.radioRow2{
+  display:flex;
+  justify-content: space-between;
+  height: 25vh;
+}
+
+.radioRow2 input[type="radio"] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+
+.radioRow2 label {
+  /* change width to 25% at the end */
+  width: 20%;
+  /* delete background-colour at the end, just makes it easier to work with */
+  background-color: azure;
+}
+
+.radioRow2 input[type="radio"]:checked + label {
+  display: flex;
+  align-items: flex-end;
+  background-image: url("../src/images/player1.png");
+  background-repeat:no-repeat;
+  background-position: 0% 100%;
+}
+
+/* first block */
+.radioRow1{
+  display:flex;
+  justify-content: space-between;
+  height: 25vh;
+}
+
+.radioRow1 input[type="radio"] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+
+.radioRow1 label {
+  /* change width to 25% at the end */
+  width: 20%;
+  /* delete background-colour at the end, just makes it easier to work with */
+  background-color: azure;
+}
+
+.radioRow1 input[type="radio"]:checked + label {
+  display: flex;
+  align-items: flex-end;
+  background-image: url("../src/images/player1.png");
+  background-repeat:no-repeat;
+  background-position: 100% 100%;
 }

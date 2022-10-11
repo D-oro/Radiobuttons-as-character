@@ -1,3 +1,6 @@
+# images
+the open source images used in this program are taken with gratitude from https://opengameart.org/ 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
